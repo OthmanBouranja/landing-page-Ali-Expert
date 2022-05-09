@@ -75,6 +75,14 @@
     .about_cont_blog {
         padding: 50px;
     }   
+    .about_cont_blog ul li {
+    float: left;
+    width: 100%;
+    margin: 5px 0;
+    font-size: 15px;
+    color: #333;
+    font-weight: 500;
+}
     .titleCard{
         font-weight: bold;
         color: #333;
@@ -86,7 +94,16 @@
         margin-right: 10px;
         color: #333;
     }
+   
+    .bg-page{
+        min-height: 162px !important;
+        background-size: cover !important;
+        background-position: center center !important;
+    }
     
+    .section-title-inner{
+        color: #fff !important;
+    }    
 </style>
 
 <body>
@@ -202,7 +219,7 @@
     <nav class="navbar navbar-expand-lg navbar--bold  navbar-transparent navbar- bg- ">
         <div class="container navbar-container">
             <!-- Brand/Logo -->
-                        <a class="navbar-brand" href="../../index.html">
+                        <a class="navbar-brand" href="index.html">
                 <img src="https://aliexpert.ma/images/logo.png" class="img-logo" alt="Boomerang">
                             </a>
             
@@ -216,23 +233,23 @@
             </div>
 
             <div class="collapse navbar-collapse align-items-center justify-content-end" id="navbar_main">
-    <ul class="navbar-nav">
-        <li class="nav-item dropdown">
-            <a href="about.html" class="nav-link">Accueil</a>
-        </li>
-        <li class="nav-item dropdown">
-            <a href="portfolio.html" class="nav-link">Notre structure</a>
-        </li>
-        <li class="nav-item dropdown">
-            <a href="blog.html" class="nav-link">Conseil bancaire</a>
-        </li>
-        <li class="nav-item dropdown">
-            <a href="contact.html" class="nav-link">Financement</a>
-        </li>
-        <li class="nav-item">
-            <a href="../../demos.html" class="nav-link">Notre approche</a>
-        </li>
-    </ul>
+                <ul class="navbar-nav">
+                    <li class="nav-item dropdown">
+                        <a href="index.html" class="nav-link">Accueil</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a href="notre_structure.html" class="nav-link">Notre structure</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a href="conseil_bancaire.html" class="nav-link">Conseil bancaire</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a href="conseil_financement.html" class="nav-link">Financement</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="notre_approche.html" class="nav-link">Notre approche</a>
+                    </li>
+                </ul>
 </div>
 
 <div class="pl-4 d-none d-lg-inline-block">
@@ -252,14 +269,28 @@
 
                    
 
-                    <div class="text-center">
-                        <div class="section-title section-title--style-1 text-center mb-2">
-                            <h3 class="section-title-inner text-normal strong-700">
-                                Notre structure
-                            </h3>
-                            <span class="section-title-delimiter clearfix d-none"></span>
+                    <section class="slice-xl slice-video d-flex align-items-center has-bg-cover bg-page bg-size-cover" style="background-image: url('../../assets/images/prv/other/inner_page.jpg'); background-position: center center;">
+                        <span class="mask mask-dark--style-1 alpha-7"></span>
+                        <div class="container">
+                            <div class="col">
+                                <div class="row">
+                                    <div class="col-lg-5">
+                                        <div class="text-center">
+                                            <div class="section-title section-title--style-1 text-center mb-2">
+                                                <h3 class="section-title-inner text-normal strong-700">
+                                                    Conseil financement
+                                                </h3>
+                                                <span class="section-title-delimiter clearfix d-none"></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-                    </div>
+                       
+                    </section>
+
+                   
 
                     <section class="slice-lg sct-color-1">
                         <div class="container">
@@ -267,60 +298,96 @@
                                 <div class="row about_blog">
                                     <div class="col-lg-6 col-md-6 col-sm-12 about_cont_blog">
                                         <div class="full text_align_left">
-                                            <h3 class="titleCard" >Notre structure</h3>
-                                            <p>L’accompagnement des entreprises et des auto entrepreneurs est le cœur de métier
-                                               <span style="color: #050e39;" >d’ALIEXPERT</span> . En tant que cabinet de Conseil, nous proposons des outils et apportons des
-                                                solutions concrètes pour favoriser votre compétitivité. Nous vous accompagnons dans votre
-                                                stratégie financière avec une méthodologie en mode projets et des Consultants experts issus
-                                                des métiers qui sont les vôtres et forts d’une réelle expérience de terrain. Faire appel à
-                                               <span style="color: #050e39;" >ALIEXPERT</span> , c’est obtenir un regard extérieur qui saura vous guider vers l’entreprise de demain.
-                                                Ne restez pas seul avec des interrogations, nous sommes là pour cultiver ensemble votre réussite !</p>
-                    
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-6 col-md-6 col-sm-12 about_feature_img padding_right_0">
-                                        <div class="full text_align_center"> <img class="img-responsive" src="https://aliexpert.ma/client/images/it_service/post-06.jpg" alt="ALIEXPERT"> </div>
-                                    </div>
-                                </div>
-                                <div class="row about_blog">
-                                    <div class="col-lg-6 col-md-6 col-sm-12 about_cont_blog">
-                                        <div class="full text_align_left">
-                                            <h3 class="titleCard" >Notre mission</h3>
-                                            <p><span style="color: #050e39;" >ALIEXPERT</span> est un cabinet de conseil spécialisé
-                                                dans l'accompagnement des TPME. <br>
-                                                Avec une expertise bancaire et financière prouvée, nous ambitionnons
-                                                d'apporter de l'information et l'assistance technique nécessaire
-                                                aux TPME pour leur permettre d'accéder aux meilleurs formules
-                                                de financement aux meilleurs conditions.</p>
-                                            <br>
-                                            <h3 class="titleCard" >Notre vocation</h3>
-                                            <p>Vous offrir la solution à vos problèmes bancaires ou de financement</p>
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-6 col-md-6 col-sm-12 about_feature_img padding_right_0">
-                                        <div class="full text_align_center"> <img class="img-responsive" src="https://aliexpert.ma/images/finance.jpg" alt="ALIEXPERT"> </div>
-                                    </div>
-                                </div>
-                                <div class="row about_blog">
-                                    <div class="col-lg-6 col-md-6 col-sm-12 about_cont_blog">
-                                        <div class="full text_align_left">
-                                            <h3 class="titleCard" >Notre Equipe</h3>
-                                            <p>Notre équipe est composée d'experts en banque et finance. <br>
-                    
-                                                Ils ont à leur actif plus de 15 années d'expériences et sont à votre entière
-                                                disposition pour étudier votre besoin, analyser vos problématiques et vous fournir
-                                                les solutions les plus adaptées à votre société et à votre besoin. <br>
-                    
-                                                Notre expertise porte sur 3 volets :</p>
+                                            <h3 class="titleCard" >Conseil & Financement</h3>
                                             <ul>
-                                                <li><i class="fa fa-check-circle"></i>La réflexion</li>
-                                                <li><i class="fa fa-check-circle"></i>Le conseil</li>
-                                                <li><i class="fa fa-check-circle"></i>L'accompagnement</li>
+                                                <li><i class="fa fa-check-circle"></i>1. ANALYSE BUSINESS MODEL</li>
+                                                <li><i class="fa fa-check-circle"></i>2. FINANCEMENT INVESTISSEMENT</li>
+                                                <li><i class="fa fa-check-circle"></i>3. FINANCEMENT EXPLOITATION</li>
+                                                <li><i class="fa fa-check-circle"></i>4. FINANCEMENT START UP</li>
+                                                <li><i class="fa fa-check-circle"></i>5. PROJET INTILAKA</li>
                                             </ul>
                                         </div>
                                     </div>
                                     <div class="col-lg-6 col-md-6 col-sm-12 about_feature_img padding_right_0">
-                                        <div class="full text_align_center"> <img class="img-responsive" src="https://aliexpert.ma/images/team.jpg" alt="ALIEXPERT"> </div>
+                                        <div class="full text_align_center"> <img class="img-responsive" src="../../assets/images/prv/other/photo15.jpg" alt="ALIEXPERT"> </div>
+                                    </div>
+                                </div>
+                                <div class="row about_blog">
+                                    <div class="col-lg-6 col-md-6 col-sm-12 about_cont_blog">
+                                        <div class="full text_align_left">
+                                            <h3 class="titleCard">ANALYSE BUSINESS MODEL</h3>
+                                            <ul>
+                                                <li><i class="fa fa-check-circle"></i>Analyse de l'idée de business</li>
+                                                <li><i class="fa fa-check-circle"></i>Validation du projet</li>
+                                                <li><i class="fa fa-check-circle"></i>Préparation business model</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6 col-md-6 col-sm-12 about_feature_img padding_right_0">
+                                        <div class="full text_align_center"> <img class="img-responsive" src="../../assets/images/prv/other/photo16.jpg" alt="ALIEXPERT"> </div>
+                                    </div>
+                                </div>
+                                <div class="row about_blog">
+                                    <div class="col-lg-6 col-md-6 col-sm-12 about_cont_blog">
+                                        <div class="full text_align_left">
+                                            <h3 class="titleCard">FINANCEMENT INVESTISSEMENT</h3>
+                                            <ul>
+                                                <li><i class="fa fa-check-circle"></i>Croissance interne ou externe</li>
+                                                <li><i class="fa fa-check-circle"></i>Financement spécifique: publique/ ou privée</li>
+                                                <li><i class="fa fa-check-circle"></i>Montage de dossier</li>
+                                                <li><i class="fa fa-check-circle"></i>Dénouement et déblocage</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6 col-md-6 col-sm-12 about_feature_img padding_right_0">
+                                        <div class="full text_align_center"> <img class="img-responsive" src="../../assets/images/prv/other/photo13.jpg" alt="ALIEXPERT"> </div>
+                                    </div>
+                                </div>
+                                <div class="row about_blog">
+                                    <div class="col-lg-6 col-md-6 col-sm-12 about_cont_blog">
+                                        <div class="full text_align_left">
+                                            <h3 class="titleCard">FINANCEMENT EXPLOITATION</h3>
+                                            <ul>
+                                                <li><i class="fa fa-check-circle"></i>Vérification des lignes</li>
+                                                <li><i class="fa fa-check-circle"></i>Analyse du besoin</li>
+                                                <li><i class="fa fa-check-circle"></i>Négociation bancaire</li>
+                                                <li><i class="fa fa-check-circle"></i>Montage de dossier</li>
+                                                <li><i class="fa fa-check-circle"></i>Dénouement et déblocage</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6 col-md-6 col-sm-12 about_feature_img padding_right_0">
+                                        <div class="full text_align_center"> <img class="img-responsive" src="../../assets/images/prv/other/photo12.jpg" alt="ALIEXPERT"> </div>
+                                    </div>
+                                </div>
+                                <div class="row about_blog">
+                                    <div class="col-lg-6 col-md-6 col-sm-12 about_cont_blog">
+                                        <div class="full text_align_left">
+                                            <h3 class="titleCard">FINANCEMENT START UP</h3>
+                                            <ul>
+                                                <li><i class="fa fa-check-circle"></i>Dépôt dossier subvention</li>
+                                                <li><i class="fa fa-check-circle"></i>Exercice de pitch</li>
+                                                <li><i class="fa fa-check-circle"></i>Levée de fonds spécifique</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6 col-md-6 col-sm-12 about_feature_img padding_right_0">
+                                        <div class="full text_align_center"> <img class="img-responsive" src="../../assets/images/prv/other/photo11.jpg" alt="ALIEXPERT"> </div>
+                                    </div>
+                                </div>
+                                <div class="row about_blog">
+                                    <div class="col-lg-6 col-md-6 col-sm-12 about_cont_blog">
+                                        <div class="full text_align_left">
+                                            <h3 class="titleCard">Projet INTILAKA</h3>
+                                            <ul>
+                                                <li><i class="fa fa-check-circle"></i>Analyse modèle</li>
+                                                <li><i class="fa fa-check-circle"></i>Préparation dossier</li>
+                                                <li><i class="fa fa-check-circle"></i>Dénouement dossier</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6 col-md-6 col-sm-12 about_feature_img padding_right_0">
+                                        <div class="full text_align_center"> <img class="img-responsive" src="../../assets/images/prv/other/photo10.jpg" alt="ALIEXPERT"> </div>
                                     </div>
                                 </div>
                             </div>
@@ -499,6 +566,7 @@
 <script src="../../assets/vendor/isotope/isotope.min.js"></script>
 <script src="../../assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
 
+<!-- Global site tag (gtag.js) - Google Analytics -->
 
 <script>
     window.dataLayer = window.dataLayer || [];

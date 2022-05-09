@@ -48,11 +48,17 @@
 
 <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
 
+<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+
+
 </head>
 
 <style>
     .img-logo{
         height: 80px;
+    }
+    .block-body{
+        height: 205px;
     }
     .textSevice{
         text-align: center;
@@ -61,6 +67,9 @@
     }
     .img-card{
         width: 100%;
+    }
+    .fullscreen{
+        height: 730px;
     }
 </style>
 
@@ -83,10 +92,10 @@
     
 
     <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar--bold  navbar-transparent navbar- bg- ">
+    <nav class="navbar navbar-expand-lg navbar--bold  navbar-transparent navbar- bg- " id="nav-placeholder">
         <div class="container navbar-container">
             <!-- Brand/Logo -->
-                        <a class="navbar-brand" href="../../index.html">
+                        <a class="navbar-brand" href="index.html">
                 <img src="https://aliexpert.ma/images/logo.png" class="img-logo" alt="Boomerang">
                             </a>
             
@@ -105,16 +114,16 @@
             <a href="index.html" class="nav-link">Accueil</a>
         </li>
         <li class="nav-item dropdown">
-            <a href="about.html" class="nav-link">Notre structure</a>
+            <a href="notre_structure.html" class="nav-link">Notre structure</a>
         </li>
         <li class="nav-item dropdown">
             <a href="conseil_bancaire.html" class="nav-link">Conseil bancaire</a>
         </li>
         <li class="nav-item dropdown">
-            <a href="contact.html" class="nav-link">Financement</a>
+            <a href="conseil_financement.html" class="nav-link">Financement</a>
         </li>
         <li class="nav-item">
-            <a href="../../demos.html" class="nav-link">Notre approche</a>
+            <a href="notre_approche.html" class="nav-link">Notre approche</a>
         </li>
     </ul>
 </div>
@@ -129,7 +138,7 @@
 </div>
 
                     <!-- Slider -->
-                    <section class="swiper-js-container background-image-holder" data-holder-type="fullscreen" data-holder-offset="">
+                    <section class="swiper-js-container background-image-holder fullscreen"  data-holder-offset="">
                         <div class="swiper-container" data-swiper-autoplay="true" data-swiper-effect="fade" data-swiper-autoheight="true">
                             <div class="swiper-wrapper">
                                 <!-- Slide -->
