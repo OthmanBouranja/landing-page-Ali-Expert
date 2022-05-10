@@ -87,6 +87,9 @@
         font-weight: bold;
         color: #333;
     }
+    .rowRevers{
+        flex-direction: row-reverse;
+    }
     ul{
         list-style: none;
     }
@@ -308,11 +311,11 @@
                                             </ul>
                                         </div>
                                     </div>
-                                    <div class="col-lg-6 col-md-6 col-sm-12 about_feature_img padding_right_0">
+                                    <div data-aos="fade-left" class="col-lg-6 col-md-6 col-sm-12 about_feature_img padding_right_0">
                                         <div class="full text_align_center"> <img class="img-responsive" src="../../assets/images/prv/other/photo15.jpg" alt="ALIEXPERT"> </div>
                                     </div>
                                 </div>
-                                <div class="row about_blog">
+                                <div class="row about_blog rowRevers">
                                     <div class="col-lg-6 col-md-6 col-sm-12 about_cont_blog">
                                         <div class="full text_align_left">
                                             <h3 class="titleCard">ANALYSE BUSINESS MODEL</h3>
@@ -323,7 +326,7 @@
                                             </ul>
                                         </div>
                                     </div>
-                                    <div class="col-lg-6 col-md-6 col-sm-12 about_feature_img padding_right_0">
+                                    <div data-aos="fade-right" class="col-lg-6 col-md-6 col-sm-12 about_feature_img padding_right_0 ">
                                         <div class="full text_align_center"> <img class="img-responsive" src="../../assets/images/prv/other/photo16.jpg" alt="ALIEXPERT"> </div>
                                     </div>
                                 </div>
@@ -339,11 +342,11 @@
                                             </ul>
                                         </div>
                                     </div>
-                                    <div class="col-lg-6 col-md-6 col-sm-12 about_feature_img padding_right_0">
+                                    <div data-aos="fade-left" class="col-lg-6 col-md-6 col-sm-12 about_feature_img padding_right_0">
                                         <div class="full text_align_center"> <img class="img-responsive" src="../../assets/images/prv/other/photo13.jpg" alt="ALIEXPERT"> </div>
                                     </div>
                                 </div>
-                                <div class="row about_blog">
+                                <div class="row about_blog rowRevers">
                                     <div class="col-lg-6 col-md-6 col-sm-12 about_cont_blog">
                                         <div class="full text_align_left">
                                             <h3 class="titleCard">FINANCEMENT EXPLOITATION</h3>
@@ -356,7 +359,7 @@
                                             </ul>
                                         </div>
                                     </div>
-                                    <div class="col-lg-6 col-md-6 col-sm-12 about_feature_img padding_right_0">
+                                    <div data-aos="fade-right" class="col-lg-6 col-md-6 col-sm-12 about_feature_img padding_right_0">
                                         <div class="full text_align_center"> <img class="img-responsive" src="../../assets/images/prv/other/photo12.jpg" alt="ALIEXPERT"> </div>
                                     </div>
                                 </div>
@@ -371,11 +374,11 @@
                                             </ul>
                                         </div>
                                     </div>
-                                    <div class="col-lg-6 col-md-6 col-sm-12 about_feature_img padding_right_0">
+                                    <div data-aos="fade-left" class="col-lg-6 col-md-6 col-sm-12 about_feature_img padding_right_0">
                                         <div class="full text_align_center"> <img class="img-responsive" src="../../assets/images/prv/other/photo11.jpg" alt="ALIEXPERT"> </div>
                                     </div>
                                 </div>
-                                <div class="row about_blog">
+                                <div class="row about_blog rowRevers">
                                     <div class="col-lg-6 col-md-6 col-sm-12 about_cont_blog">
                                         <div class="full text_align_left">
                                             <h3 class="titleCard">Projet INTILAKA</h3>
@@ -386,7 +389,7 @@
                                             </ul>
                                         </div>
                                     </div>
-                                    <div class="col-lg-6 col-md-6 col-sm-12 about_feature_img padding_right_0">
+                                    <div data-aos="fade-right" class="col-lg-6 col-md-6 col-sm-12 about_feature_img padding_right_0">
                                         <div class="full text_align_center"> <img class="img-responsive" src="../../assets/images/prv/other/photo10.jpg" alt="ALIEXPERT"> </div>
                                     </div>
                                 </div>
@@ -561,13 +564,17 @@
 <script src="../../assets/vendor/vide/vide.min.js"></script>
 <script src="../../assets/vendor/viewport-checker/viewportchecker.min.js"></script>
 <script src="../../assets/vendor/wow/wow.min.js"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
 
 <!-- Isotope -->
 <script src="../../assets/vendor/isotope/isotope.min.js"></script>
 <script src="../../assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
 
 <!-- Global site tag (gtag.js) - Google Analytics -->
-
+<script>
+    AOS.init();
+  </script>
 <script>
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
