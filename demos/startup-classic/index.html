@@ -83,6 +83,25 @@
     border: 1px solid #050e39 !important; 
     font-weight: bold !important;
 }
+
+.imageBack {
+    background: rgba(0,0,0,0) url(http://127.0.0.1:5500/assets/images/prv/other/imgHome.webp) no-repeat scroll right -25% center/58% auto;
+    z-index: -1;
+    margin-top: 91px;
+    height: 65vh;
+}
+.icon-bx-wraper {
+    box-shadow: 0 0 10px 4px rgb(31 66 135 / 10%);
+    padding: 30px;
+    background-color: #fff;
+    border-radius: 10px;
+    transition: all .5s;
+    overflow: hidden;
+    z-index: 9;
+    height: 284px;
+    position: relative;
+    margin-bottom: 30px;
+}
 </style>
 
 <body>
@@ -156,24 +175,25 @@
                                 <!-- Slide -->
                                 <div class="swiper-slide" data-swiper-autoplay="8000">
                                     <div class="holder-item sct-color-2 slice pb-0">
-                                        <div class="container d-flex">
+                                        <div class="imageBack"  >
                                             <div class="row cols-xs-space cols-sm-space cols-md-space bgImg">
-                                                <div class="col-lg-5 text-center text-lg-left align-self-center">
-                                                    <h2 class="heading heading-1 strong-400 animated" data-animation-in="fadeInUp" data-animation-delay="200">
-                                                        Financer vos ptoject
-                                                    </h1>
-                                                    <p class="lead mt-4 animated" data-animation-in="fadeInUp" data-animation-delay="600">
-                                                        FINANCER VOS PROJETS N'A JAMAIS ÉTÉ AUSSI SIMPLE
-                                                    </p>
+                                               
+                                                    <div class="container">
+                                                        <h2 class="heading heading-1 strong-400 animated" data-animation-in="fadeInUp" data-animation-delay="200">
+                                                            Financer vos ptoject
+                                                        </h1>
+                                                        <p class="lead mt-4 animated" data-animation-in="fadeInUp" data-animation-delay="600">
+                                                            FINANCER VOS PROJETS N'A JAMAIS ÉTÉ AUSSI SIMPLE
+                                                        </p>
+    
+                                                        <a href="" target="_blank" class="btn btn-styled btn-base-1 mt-4 animated" data-animation-in="fadeInUp" data-animation-delay="1200">
+                                                            Déposer un dossier
+                                                        </a>
+                                                    </div>
+                                             
 
-                                                    <a href="" target="_blank" class="btn btn-styled btn-base-1 mt-4 animated" data-animation-in="fadeInUp" data-animation-delay="1200">
-                                                        Déposer un dossier
-                                                    </a>
-                                                </div>
+                                           
 
-                                                <div class="col-lg-7 ml-lg-auto align-self-end">
-                                                    <img src="../../assets/images/slider/elements/model-m-1.png" class="img-fluid img-center animated" data-animation-in="fadeIn" data-animation-delay="200">
-                                                </div>
                                             </div>
                                         </div>
                                     </div>
@@ -228,8 +248,82 @@
                         </div>
                     </div>
 
+    
+                    <div class="container" style="display: flex;" >
+                        <div class="col-lg-4 col-md-6" >
+                            <div class="" >
+                                <!-- <div>
+                                    <i class="fas fa-chart-line"></i>
+                                </div> -->
+                                <div class="icon-content">
+                                    <h4 class="dlab-title m-b15">DIAGNOSTIC DE SITUATION</h4>
+                                    <p>- Vérification des lignes <br>
+                                        - Analyse des utilisations de lignes <br>
+                                        - Identification des anomalies</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6" >
+                            <div class="icon-bx-wraper" >
+                                <div class="icon-content">
+                                    <h4 class="dlab-title m-b15">Analyse des conditions Bancaires</h4>
+                                    <p>- Vérification des contrats <br>
+                                        - Recalcul des Agios / identification des écarts <br>
+                                        Analyse des conditions de taux</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6" >
+                            <div class="icon-bx-wraper" >
+                                <div class="icon-content">
+                                    <h4 class="dlab-title m-b15">Relèvement des lignes bancaires</h4>
+                                    <p>- Analyse et estimation du besoin <br>
+                                        - Préparation du dossier bancaire <br>
+                                        - Dépôt et suivi des dossiers avec la banque</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="container" style="display: flex;">
+                        <div class="col-lg-4 col-md-6" style="margin-top: -100px;">
+                            <div class="icon-bx-wraper" >
+                                <!-- <div>
+                                    <i class="fas fa-chart-line"></i>
+                                </div> -->
+                                <div class="icon-content">
+                                    <h4 class="dlab-title m-b15">DIAGNOSTIC DE SITUATION</h4>
+                                    <p>- Vérification des lignes <br>
+                                        - Analyse des utilisations de lignes <br>
+                                        - Identification des anomalies</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6" >
+                            <div class="icon-bx-wraper" >
+                                <div class="icon-content">
+                                    <h4 class="dlab-title m-b15">Analyse des conditions Bancaires</h4>
+                                    <p>- Vérification des contrats <br>
+                                        - Recalcul des Agios / identification des écarts <br>
+                                        Analyse des conditions de taux</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6" >
+                            <div class="icon-bx-wraper" >
+                                <div class="icon-content">
+                                    <h4 class="dlab-title m-b15">Relèvement des lignes bancaires</h4>
+                                    <p>- Analyse et estimation du besoin <br>
+                                        - Préparation du dossier bancaire <br>
+                                        - Dépôt et suivi des dossiers avec la banque</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                     <section class="slice-lg sct-color-1">
                         <div class="container">
+
+                           
+
                             <div class="row cols-xs-space cols-sm-space cols-md-space align-items-center">
                                 <div class="col-md-6">
                                     <div data-aos="fade-right" class="block block-image-holder z-depth-3 z-depth-4--hover">
