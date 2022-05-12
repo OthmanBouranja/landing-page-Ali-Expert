@@ -78,10 +78,20 @@
       background-color: #050e39!important;
     }
     .btn-base-1 {
-    color: #FFF;
-    background-color: #050e39 !important;
-    border: 1px solid #050e39 !important; 
-    font-weight: bold !important;
+        color: #FFF;
+        background-color: #ffb905bf !important;
+        border: 1px solid #ffb905 !important;
+        font-weight: bold !important;
+        border-radius: 10px;
+    }
+    :root {
+    --gradient: linear-gradient(to right,#050e39 0,#f8ae56 51%,#f55f8d 100%);
+}
+
+.icon-bx-wraper:hover {
+    background-image: var(--gradient);
+    background-size: 200%;
+    cursor: pointer;
 }
 
 .imageBack {
@@ -101,6 +111,53 @@
     height: 284px;
     position: relative;
     margin-bottom: 30px;
+}
+.icon-bx-wraper:hover .wraper-effect {
+    right: -150px;
+    bottom: -150px;
+}
+.wraper-effect {
+    border-radius: 50%;
+    position: absolute;
+    transition: all .5s;
+    height: 350px;
+    width: 350px;
+    background-color: rgba(255,255,255,.2);
+    right: -100%;
+    bottom: -100%;
+    z-index: -1;
+}
+.icon-bx-wraper .wraper-effect:after, .icon-bx-wraper .wraper-effect:before {
+    content: "";
+    border-radius: 50%;
+    position: absolute;
+    transition: all .5s;
+    transform: translate(-50%,-50%);
+    top: 50%;
+    left: 50%;
+}
+.icon-bx-wraper .wraper-effect:after, .icon-bx-wraper .wraper-effect:before {
+    content: "";
+    border-radius: 50%;
+    position: absolute;
+    transition: all .5s;    
+    transform: translate(-50%,-50%);
+    top: 50%;
+    left: 50%;
+}
+.icon-bx-wraper .wraper-effect:before {
+    background-color: rgba(255,255,255,.2);
+    height: 250px;
+    width: 250px;
+}
+.icon-bx-wraper:hover .dlab-title{
+    color: #fff;
+}
+.icon-bx-wraper:hover p{
+    color: #fff;
+}
+.text-center{
+    text-align: center;
 }
 </style>
 
@@ -265,6 +322,7 @@
                         </div>
                         <div class="col-lg-4 col-md-6" >
                             <div class="icon-bx-wraper" >
+                                <div class="wraper-effect"></div>
                                 <div class="icon-content">
                                     <h4 class="dlab-title m-b15">Analyse des conditions Bancaires</h4>
                                     <p>- Vérification des contrats <br>
@@ -275,6 +333,7 @@
                         </div>
                         <div class="col-lg-4 col-md-6" >
                             <div class="icon-bx-wraper" >
+                                <div class="wraper-effect"></div>
                                 <div class="icon-content">
                                     <h4 class="dlab-title m-b15">Relèvement des lignes bancaires</h4>
                                     <p>- Analyse et estimation du besoin <br>
@@ -287,9 +346,7 @@
                     <div class="container" style="display: flex;">
                         <div class="col-lg-4 col-md-6" style="margin-top: -100px;">
                             <div class="icon-bx-wraper" >
-                                <!-- <div>
-                                    <i class="fas fa-chart-line"></i>
-                                </div> -->
+                                <div class="wraper-effect"></div>
                                 <div class="icon-content">
                                     <h4 class="dlab-title m-b15">DIAGNOSTIC DE SITUATION</h4>
                                     <p>- Vérification des lignes <br>
@@ -300,6 +357,7 @@
                         </div>
                         <div class="col-lg-4 col-md-6" >
                             <div class="icon-bx-wraper" >
+                                <div class="wraper-effect"></div>
                                 <div class="icon-content">
                                     <h4 class="dlab-title m-b15">Analyse des conditions Bancaires</h4>
                                     <p>- Vérification des contrats <br>
@@ -310,6 +368,7 @@
                         </div>
                         <div class="col-lg-4 col-md-6" >
                             <div class="icon-bx-wraper" >
+                                <div class="wraper-effect"></div>
                                 <div class="icon-content">
                                     <h4 class="dlab-title m-b15">Relèvement des lignes bancaires</h4>
                                     <p>- Analyse et estimation du besoin <br>
@@ -318,6 +377,18 @@
                                 </div>
                             </div>
                         </div>
+                    </div>
+                    <div class="container">
+                            <h4 class="dlab-title m-b15 text-center">VOULEZ VOUS DÉPOSER UN DOSSIER ?</h4>
+                            <p class="lead strong-300 text-center">
+                                Testez votre éligibilité pour obtenir rapidement du financement
+                            </p>
+                            <div class="container">
+                                <a href="" target="_blank" class="btn btn-styled btn-base-1 mt-4 animated animation-ended" data-animation-in="fadeInUp" data-animation-delay="1200">
+                                     Déposer un dossier
+                                </a>
+                            </div>
+                            
                     </div>
                     <section class="slice-lg sct-color-1">
                         <div class="container">
