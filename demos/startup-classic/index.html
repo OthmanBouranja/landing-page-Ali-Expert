@@ -57,6 +57,9 @@
 </head>
 
 <style>
+    html {
+  scroll-behavior: smooth;
+}
     .fullscreen {
     height: 840px !important;
 }
@@ -195,6 +198,20 @@
 .para-card{
     padding: 8px;
 }
+.me-3 {
+    margin-right: 1rem!important;
+}
+.flex-container {
+  display: flex;
+  flex-direction: row;
+}
+
+/* Responsive layout - makes a one column layout instead of a two-column layout */
+@media (max-width: 800px) {
+  .flex-container {
+    flex-direction: column;
+  }
+}
 </style>    
 
 <body>
@@ -244,7 +261,7 @@
             <a href="#notre-structure" class="nav-link">Notre structure</a>
         </li>
         <li class="nav-item dropdown">
-            <a href="#" class="nav-link">Evaluer son projet</a>
+            <a href="#evaluation-projet " class="nav-link">Evaluer son projet</a>
         </li>
     </ul>
 </div>
@@ -313,7 +330,7 @@
                     </div>
 
     
-                    <div class="container" style="display: flex;" >
+                    <div class="container flex-container"  >
                         <div class="col-lg-4 col-md-6" >
                             <div class="" >
                                 <!-- <div>
@@ -354,7 +371,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="container" style="display: flex;">
+                    <div class="container flex-container" >
                         <div class="col-lg-4 col-md-6" style="margin-top: -100px;">
                             <div class="icon-bx-wraper" >
                                 <div class="wraper-effect"></div>
@@ -395,7 +412,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="container" style="display: flex;">
+                    <div class="container flex-container" >
                         <div class="col-lg-4 col-md-6" style="margin-top: -100px;" >
                             <div class="icon-bx-wraper" style="height: 190px;" >
                                 <div class="wraper-effect"></div>
@@ -420,7 +437,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="container">
+                    <div class="container flex-container">
                            
                             
                     </div>
@@ -430,7 +447,7 @@
                             </div>
                             <div class="col-lg-4">
                                 <h3 class="heading heading-1 strong-400 animated animation-ended" data-animation-in="fadeInUp" data-animation-delay="200">
-                                    A propos
+                                    Notre Structure
                                 </h3>
                                 <p class="lead strong-300 text-center" style="text-align: justify !important;">
                                     ALIEXPERT est un cabinet de conseil spécialisé dans l'accompagnement des TPME.
@@ -441,7 +458,7 @@ Avec une expertise bancaire et financière prouvée, nous ambitionnons d'apporte
 
 
                 
-                    <section class="sct-color-1 text-col" style="display: flex;justify-content: center;">
+                    <section class="sct-color-1 text-col" style="display: flex;justify-content: center;" id="evaluation-projet">
                         <div class="col-lg-4">
                             <h3 class="heading heading-1 strong-400 animated animation-ended" data-animation-in="fadeInUp" data-animation-delay="200">
                                 EVALUATION DE PROJET
@@ -449,7 +466,40 @@ Avec une expertise bancaire et financière prouvée, nous ambitionnons d'apporte
                             <p class="lead strong-300 text-center" style="text-align: justify !important;">
                                 Pour vérifier l’adéquation entre le porteur de projet et le projet de l’entreprise. L’ensemble des points forts et des points faibles mais aussi les points d’amélioration sont une source indispensable pour alimenter au mieux son business plan. Rassurez vos futurs partenaires. Votre projet n’en sera que plus convaincant
                             </p>
-                        </div>
+                            <div class="row pt-4 pb-4">
+                                <div class="col-12 pb-2 d-flex align-items-center">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="#82ae27" class="me-3" viewBox="0 0 16 16">
+                                <path d="M8.515 1.019A7 7 0 0 0 8 1V0a8 8 0 0 1 .589.022l-.074.997zm2.004.45a7.003 7.003 0 0 0-.985-.299l.219-.976c.383.086.76.2 1.126.342l-.36.933zm1.37.71a7.01 7.01 0 0 0-.439-.27l.493-.87a8.025 8.025 0 0 1 .979.654l-.615.789a6.996 6.996 0 0 0-.418-.302zm1.834 1.79a6.99 6.99 0 0 0-.653-.796l.724-.69c.27.285.52.59.747.91l-.818.576zm.744 1.352a7.08 7.08 0 0 0-.214-.468l.893-.45a7.976 7.976 0 0 1 .45 1.088l-.95.313a7.023 7.023 0 0 0-.179-.483zm.53 2.507a6.991 6.991 0 0 0-.1-1.025l.985-.17c.067.386.106.778.116 1.17l-1 .025zm-.131 1.538c.033-.17.06-.339.081-.51l.993.123a7.957 7.957 0 0 1-.23 1.155l-.964-.267c.046-.165.086-.332.12-.501zm-.952 2.379c.184-.29.346-.594.486-.908l.914.405c-.16.36-.345.706-.555 1.038l-.845-.535zm-.964 1.205c.122-.122.239-.248.35-.378l.758.653a8.073 8.073 0 0 1-.401.432l-.707-.707z"></path>
+                                <path d="M8 1a7 7 0 1 0 4.95 11.95l.707.707A8.001 8.001 0 1 1 8 0v1z"></path>
+                                <path d="M7.5 3a.5.5 0 0 1 .5.5v5.21l3.248 1.856a.5.5 0 0 1-.496.868l-3.5-2A.5.5 0 0 1 7 9V3.5a.5.5 0 0 1 .5-.5z"></path>
+                                </svg>
+                                <p class="mb-0"> Quelques minutes suffisent pour faire le test. </p>
+                                </div>
+                                <div class="col-12 pb-2 d-flex align-items-center">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="#82ae27" class="me-3" viewBox="0 0 16 16">
+                                <path d="M9.669.864 8 0 6.331.864l-1.858.282-.842 1.68-1.337 1.32L2.6 6l-.306 1.854 1.337 1.32.842 1.68 1.858.282L8 12l1.669-.864 1.858-.282.842-1.68 1.337-1.32L13.4 6l.306-1.854-1.337-1.32-.842-1.68L9.669.864zm1.196 1.193.684 1.365 1.086 1.072L12.387 6l.248 1.506-1.086 1.072-.684 1.365-1.51.229L8 10.874l-1.355-.702-1.51-.229-.684-1.365-1.086-1.072L3.614 6l-.25-1.506 1.087-1.072.684-1.365 1.51-.229L8 1.126l1.356.702 1.509.229z"></path>
+                                <path d="M4 11.794V16l4-1 4 1v-4.206l-2.018.306L8 13.126 6.018 12.1 4 11.794z"></path>
+                                </svg>
+                                <p class="mb-0"> Répondez simplement aux questions qui sont posées. </p>
+                                </div>
+                                <div class="col-12 pb-2 d-flex align-items-center">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="#82ae27" class="me-3" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd" d="M10.854 7.146a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 1 1 .708-.708L7.5 9.793l2.646-2.647a.5.5 0 0 1 .708 0z"></path>
+                                <path d="M4 1.5H3a2 2 0 0 0-2 2V14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V3.5a2 2 0 0 0-2-2h-1v1h1a1 1 0 0 1 1 1V14a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V3.5a1 1 0 0 1 1-1h1v-1z"></path>
+                                <path d="M9.5 1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-3a.5.5 0 0 1-.5-.5v-1a.5.5 0 0 1 .5-.5h3zm-3-1A1.5 1.5 0 0 0 5 1.5v1A1.5 1.5 0 0 0 6.5 4h3A1.5 1.5 0 0 0 11 2.5v-1A1.5 1.5 0 0 0 9.5 0h-3z"></path>
+                                </svg>
+                                <p class="mb-0"> Le questionnaire aborde les points clés de votre projet. </p>
+                                </div>
+                                <div class="col-12 pb-2 d-flex align-items-center">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="#82ae27" class="me-3" viewBox="0 0 16 16">
+                                <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"></path>
+                                <path d="M4.285 9.567a.5.5 0 0 1 .683.183A3.498 3.498 0 0 0 8 11.5a3.498 3.498 0 0 0 3.032-1.75.5.5 0 1 1 .866.5A4.498 4.498 0 0 1 8 12.5a4.498 4.498 0 0 1-3.898-2.25.5.5 0 0 1 .183-.683zM7 6.5C7 7.328 6.552 8 6 8s-1-.672-1-1.5S5.448 5 6 5s1 .672 1 1.5zm1.757-.437a.5.5 0 0 1 .68.194.934.934 0 0 0 .813.493c.339 0 .645-.19.813-.493a.5.5 0 1 1 .874.486A1.934 1.934 0 0 1 10.25 7.75c-.73 0-1.356-.412-1.687-1.007a.5.5 0 0 1 .194-.68z"></path>
+                                </svg>
+                                <p class="mb-0"> 100% Gratuit – C’est notre coup de pouce ! </p>
+                                </div>
+                                </div>
+                                <a href="" class="mt-2 btn-base-1 btn-styled"> Challenger mon projet » </a>
+                        </div>x
                         <div class="col-lg-6">
                             <img src="../../assets/images/prv/other/photoLeft.png" alt="" style="width: 100%;">
                         </div>
@@ -457,138 +507,9 @@ Avec une expertise bancaire et financière prouvée, nous ambitionnons d'apporte
 
 
 
-                    <section class="slice-lg  border-top">
-                        <div class="pricing-plans pricing-plans--style-3">
-                            <div class="container">
-                                <div class="section-title section-title--style-1 text-center">
-                                    <h3 class="section-title-inner text-normal strong-300">
-                                        NOS SERVICES
-                                    </h3>
-                                    <div class="fluid-paragraph fluid-paragraph-sm">
-                                        <p class="lead strong-300">
-                                            Financer vos projets n'a jamais été aussi simple.
-                                        </p>
-                                    </div>
-                                    <span class="section-title-delimiter clearfix d-none"></span>
-                                </div>
+                  
 
-                                <span class="space-xs-xl"></span>
-
-                                <div class="row">
-                                    <div class="col-lg-4">
-                                        <div class="block block-pricing">
-                                            <div class="plan-title-wrapper no-bg">
-                                                <img src="../../assets/images/prv/other/photo1.jpg" alt="" class="img-card" srcset="">
-                                            </div>
-
-                                            <div class="block-body text-center px-4">
-                                                <p style="font-weight: bold;color: #2e7eed;" >Diagnostic De Situation</p>
-                                                <p>- Vérification des lignes</p>
-                                                <p>- Analyse des utilisations de lignes</p>
-                                                <p>- Identification des anomalies</p>
-                                            </div>
-
-                                        </div>
-                                    </div>
-
-                                    <div class="col-lg-4">
-                                        <div class="block block-pricing">
-                                            <div class="plan-title-wrapper">
-                                                <img src="../../assets/images/prv/other/photo7.jpg" alt="" style="width: 100%;" srcset="">
-                                            </div>
-
-                                            <div class="block-body text-center px-4">
-                                                <p style="font-weight: bold;color: #2e7eed;" >Analyse des conditions Bancaires</p>
-                                                <p>- Vérification des contrats</p>
-                                                <p>- Recalcul des Agios / identification des écarts</p>
-                                                <p>- Analyse des conditions de taux</p>
-                                            </div>
-
-                                        </div>
-                                    </div>
-
-                                    <div class="col-lg-4">
-                                        <div class="block block-pricing">
-                                            <div class="plan-title-wrapper no-bg">
-                                                <img src="../../assets/images/prv/other/photo2.jpg" alt="" style="width: 100%;" srcset="">
-                                            </div>
-
-                                            <div class="block-body text-center px-4">
-                                                <p style="font-weight: bold;color: #2e7eed;" >Relèvement des lignes bancaires</p>
-                                                <p>- Analyse et estimation du besoin</p> 
-                                                <p>- Préparation du dossier bancaire</p>
-                                                <p>- Dépôt et suivi des dossiers avec la banque</p>
-                                            </div>
-
-                                            
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="row">
-                                    <div class="col-lg-4">
-                                        <div class="block block-pricing">
-                                            <div class="plan-title-wrapper no-bg">
-                                                <img src="../../assets/images/prv/other/photo3.jpg" alt="" style="width: 100%;" srcset="">
-                                            </div>  
-
-                                            <div class="block-body text-center px-4">
-                                                <p style="font-weight: bold;color: #2e7eed;" >Financement Investissement</p>
-                                                <p>- Croissance interne ou externe</p> 
-                                                <p>- Financement spécifique: publique/ ou privée</p>    
-                                                <p>- Montage de dossier</p>
-                                                <P>- Dénouement et déblocage</P>
-                                            </div>
-
-                                            
-                                        </div>
-                                    </div>
-
-                                    <div class="col-lg-4">
-                                        <div class="block block-pricing">
-                                            <div class="plan-title-wrapper">
-                                                <img src="../../assets/images/prv/other/photo4.jpg" alt="" style="width: 100%;" srcset="">
-                                            </div>
-
-                                            <div class="block-body text-center px-4">
-                                                <p style="font-weight: bold;color: #2e7eed;" >Analyse Business Model</p>
-                                                <p>- Analyse de l'idée de business</p> 
-                                                <p>- Validation du projet</p>    
-                                                <p>- Préparation business model</p>
-                                            </div>
-
-                                            
-                                        </div>
-                                    </div>
-
-                                    <div class="col-lg-4">
-                                        <div class="block block-pricing">
-                                            <div class="plan-title-wrapper no-bg">
-                                                <img src="../../assets/images/prv/other/photo5.jpg" alt="" style="width: 100%;" srcset="">
-                                            </div>
-
-                                            <div class="block-body text-center px-4">
-                                                <p style="font-weight: bold;color: #2e7eed;" >Financement Exploitation</p>
-                                                <p>- Vérification des lignes</p> 
-                                                <p>- Analyse du besoin</p>    
-                                                <p>- Négociation bancaire</p>
-                                            </div>
-
-                                        </div>
-                                    </div>
-                                </div>  
-                            </div>
-                        </div>
-                    </section>
-
-                    <section class="slice-sm sct-color-1 border-top border-bottom">
-                        <div class="container">
-                            <div class="text-center">
-                                <h1 class="text-lg" style="font-size: 2rem !important;font-weight: bold;" >VOULEZ VOUS DÉPOSER UN DOSSIER ? <span class="badge badge-md badge-inline badge-pill bg-base-1 bg-btn" style="padding: 1.65em 1em; padding-left: 2rem; padding-right: 2rem;"> <span style="font-size: 1rem; font-weight: bold;" >Déposer un dossier</span> </span></h1>
-                                <h4>Testez votre éligibilité pour obtenir rapidement du financement</h4>
-                            </div>
-                        </div>
-                    </section>
+                
 
                  
 
