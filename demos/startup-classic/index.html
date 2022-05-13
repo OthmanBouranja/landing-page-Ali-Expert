@@ -165,6 +165,9 @@
 .text-center{
     text-align: center;
 }
+.card-top{
+    margin-top: -100px;
+}
 .heading{
     color: #050e39 !important;
     font-weight: 900 !important;
@@ -211,6 +214,32 @@
   .flex-container {
     flex-direction: column;
   }
+}
+@media (max-width: 900px) {
+    .card-top{
+      margin-top: 0px !important;
+  }
+  .heading{
+      text-align: center;
+  }
+  .lead{
+    text-align: center;
+  }
+  .btn-center-respo{
+      text-align: center;
+  }
+  .fullscreen {
+    height: 640px !important;
+}
+.imageBack {
+    background: rgba(0,0,0,0) url(http://127.0.0.1:5500/assets/images/prv/other/imgHome.webp) no-repeat scroll top -5% center/103%;
+    z-index: -1;
+    margin-top: -60px;
+    height: 40vh;
+}
+.top-div {
+    margin-top: 56%;
+}
 }
 </style>    
 
@@ -296,9 +325,12 @@
                                                             Testez votre éligibilité pour obtenir rapidement du financement
                                                         </p>
     
-                                                        <a href="" target="_blank" class="btn btn-styled btn-base-1 mt-4 animated" data-animation-in="fadeInUp" data-animation-delay="1200">
-                                                            Déposer un dossier
-                                                        </a>
+                                                        <div class="btn-center-respo">
+                                                             <a href="" target="_blank" class="btn btn-styled btn-base-1 mt-4 animated" data-animation-in="fadeInUp" data-animation-delay="1200">
+                                                                Déposer un dossier
+                                                             </a>
+                                                        </div>  
+                                                       
                                                     </div>
                                              
 
@@ -372,7 +404,7 @@
                         </div>
                     </div>
                     <div class="container flex-container" >
-                        <div class="col-lg-4 col-md-6" style="margin-top: -100px;">
+                        <div class="col-lg-4 col-md-6 card-top" >
                             <div class="icon-bx-wraper" >
                                 <div class="wraper-effect"></div>
                                 <div class="icon-content">
@@ -413,7 +445,7 @@
                         </div>
                     </div>
                     <div class="container flex-container" >
-                        <div class="col-lg-4 col-md-6" style="margin-top: -100px;" >
+                        <div class="col-lg-4 col-md-6 card-top"  >
                             <div class="icon-bx-wraper" style="height: 190px;" >
                                 <div class="wraper-effect"></div>
                                 <div class="icon-content">
@@ -442,18 +474,22 @@
                             
                     </div>
                     <section class="sct-color-1 text-col" style="display: flex;" id="notre-structure">
+                        <div class="row">
                             <div class="col-lg-6">
                                 <img src="../../assets/images/prv/other/photoLeft.png" alt="" style="width: 100%;">
                             </div>
                             <div class="col-lg-4">
-                                <h3 class="heading heading-1 strong-400 animated animation-ended" data-animation-in="fadeInUp" data-animation-delay="200">
-                                    Notre Structure
-                                </h3>
-                                <p class="lead strong-300 text-center" style="text-align: justify !important;">
-                                    ALIEXPERT est un cabinet de conseil spécialisé dans l'accompagnement des TPME.
-Avec une expertise bancaire et financière prouvée, nous ambitionnons d'apporter de l'information et l'assistance technique nécessaire aux TPME pour leur permettre d'accéder aux meilleurs formules de financement aux meilleurs conditions.
-                                </p>
-                            </div>
+                                <div>
+                                    <h3 class="heading heading-1 strong-400 animated animation-ended" data-animation-in="fadeInUp" data-animation-delay="200">
+                                        Notre Structure
+                                    </h3>
+                                    <p class="lead strong-300 text-center" style="text-align: justify !important;">
+                                        ALIEXPERT est un cabinet de conseil spécialisé dans l'accompagnement des TPME.
+                                        Avec une expertise bancaire et financière prouvée, nous ambitionnons d'apporter de l'information et l'assistance technique nécessaire aux TPME pour leur permettre d'accéder aux meilleurs formules de financement aux meilleurs conditions.
+                                    </p>
+                                </div>
+                            </div>  
+                        </div>
                     </section>
 
 
