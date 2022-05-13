@@ -63,6 +63,7 @@
     .fullscreen {
     height: 840px !important;
 }
+
     .img-logo{
         height: 80px;
     }
@@ -93,13 +94,29 @@
     :root {
     --gradient: linear-gradient(to right,#050e39 0,#f8ae56 51%,#f55f8d 100%);
 }
-
+.btn-projet{
+    text-align: center;
+    padding-bottom: 30px;
+}
 .icon-bx-wraper:hover {
     background-image: var(--gradient);
     background-size: 200%;
     cursor: pointer;
 }
-
+.footer {
+    background: #111;
+    color: rgb(255 255 255) !important;
+}
+.footer .footer-links>li>a {
+    color: rgb(255 255 255) !important;
+    font-weight: bold;
+}
+.footer .social-media>li>a>i {
+    color: rgb(255 255 255) !important;
+}
+.row-class{
+    justify-content: center;
+}
 .imageBack {
     background: rgba(0,0,0,0) url(http://127.0.0.1:5500/assets/images/prv/other/imgHome.webp) no-repeat scroll right -25% center/58% auto;
     z-index: -1;
@@ -251,12 +268,17 @@
     margin-top: 56%;
 }
 }
+@media (max-width: 985px) {
+    .img-desctop{
+        display: none;
+    }
+}
 @media (min-width: 990px) {
     .img-mobile{
         display: none;
     }
     .img-desctop{
-        display: none;
+        display: block;
     }
 }
 </style>    
@@ -280,7 +302,7 @@
     
 
     <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar--bold  navbar-transparent navbar- bg- " id="nav-placeholder">
+    <nav class="navbar navbar-expand-lg navbar--bold  navbar-transparent navbar- bg- " id="nav-placeholder" style="position: fixed;width: 100%;background-color: white">
         <div class="container navbar-container">
             <!-- Brand/Logo -->
                         <a class="navbar-brand" href="index.html">
@@ -513,7 +535,7 @@
 
                 
                 <section class="sct-color-1 text-col" style="display: flex;justify-content: center;" id="evaluation-projet">
-                    <div class="row">
+                    <div class="row row-class">
                         <div class="col-lg-6 img-mobile">
                             <img src="../../assets/images/prv/other/photoLeft.png" alt="" style="width: 100%;">
                         </div>
@@ -556,7 +578,9 @@
                                 <p class="mb-0"> 100% Gratuit – C’est notre coup de pouce ! </p>
                                 </div>
                                 </div>
-                                <a href="" class="mt-2 btn-base-1 btn-styled"> Challenger mon projet » </a>
+                                <div class="btn-projet" >
+                                    <a href="" class="mt-2 btn-base-1 btn-styled"> Challenger mon projet » </a>
+                                </div>
                         </div>
                         <div class="col-lg-6 img-desctop" >
                             <img src="../../assets/images/prv/other/photoLeft.png" alt="" style="width: 100%;">
@@ -577,9 +601,7 @@
                         <span class="clearfix"></span>
                         <span class="heading-xs c-gray-light strong-400">Ali Expert</span>
                         <p class="mt-3">
-                            All the components included in Boomerang are built to the same level of quality as Bootstrap and highlighted with several example pages.
-                        </p>
-
+                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ab nesciunt architecto fugit magni earum ad inventore cumque qui eligendi .
                         <div class="copyright mt-4">
                             <p class="mb-0">
                                 Copyright &copy;
